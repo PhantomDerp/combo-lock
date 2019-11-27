@@ -1,0 +1,15 @@
+{
+  "name": "combo-lock",
+  "version": "1.0.0",
+  "description": "combination lock",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "author": "phant",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1",
+    "socket.io": "^2.3.0"
+  }
+}

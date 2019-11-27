@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <title>hi</title>
+  </head>
+  <body>
+    <h1>10,000 possible combinations</h1>
+    <div id="codebox" class="box">
+      <button id="n1" onclick="buttonClick('n1')">0</button>
+      <button id="n2" onclick="buttonClick('n2')">0</button>
+      <button id="n3" onclick="buttonClick('n3')">0</button>
+      <button id="n4" onclick="buttonClick('n4')">0</button>
+    </div>
+    <button onclick="testCode()">Test Code</button>
+    <h3>Hints</h3>
+    <div class="box">
+      <h6>Hints get progressively better (hint 1 is better than hint 2, etc)</h6>
+      <button onclick="socket.emit('getHint', 'hint1')" id="hint1">Hint 1</button>
+      <button onclick="socket.emit('getHint', 'hint2')" id="hint2">Hint 2</button>
+      <button onclick="socket.emit('getHint', 'hint3')" id="hint3">Hint 3</button>
+      <button onclick="socket.emit('getHint', 'hint4')" id="hint4">Hint 4</button>
+      <button onclick="socket.emit('getHint', 'solution')" id="solution">Solution</button>
+    </div>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
