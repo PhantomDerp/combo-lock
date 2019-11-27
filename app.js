@@ -42,8 +42,8 @@ io.on('connection', function(socket) {
   
   //hints
   
-  var letters = 'abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ()\',;.:+1{}+=0<';
-  var letters2 = 'nopqrstuvwxyzabcdefghijklm NOPQRSTUVWXYZABCDEFGHIJKLM()\',;.:+1{}+=0<';
+  var letters = 'abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ()\',;.:+1{}+=0</';
+  var letters2 = 'nopqrstuvwxyzabcdefghijklm NOPQRSTUVWXYZABCDEFGHIJKLM()\',;.:+1{}+=0</';
  
  function decode(string) {
    var output = '';
@@ -59,7 +59,7 @@ io.on('connection', function(socket) {
     if (data === 'hint1') {
       hint = decode('hfr gur vafcrpg ryrzrag pbafbyr');
     } else if (data === 'hint2') {
-      hint = decode('full source code: LINK');
+      hint = decode('shyy fbhepr pbqr: uggcf://tvguho.pbz/CunagbzQrec/pbzob-ybpx');
     } else if (data === 'hint3') {
       hint = decode("fraq pbqr gb freire jvgu fbpxrg.rzvg('pbqrThrff', QNGN);");
     } else if (data === 'hint4') {
